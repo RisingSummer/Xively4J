@@ -21,6 +21,9 @@ import com.xively.client.http.impl.TriggerRequesterImpl;
  * 
  * @author s0pau
  */
+ XivelyService.instance().feed().create(<Feed object>);
+XivelyService.instance().datastream(feedId).create(<Datastream object>);
+XivelyService.instance().datastream(feedId).delete(datastreamId);
 public class XivelyService
 {
 	private static XivelyService instance;
